@@ -8,7 +8,7 @@ extern int read_hughnav(void);
 
 static void hughnav_update(struct work_struct *w)
 {
-	hughnav_value = read_hughnav(); // call update function here
+	hughnav_value = read_hughnav();
 	printk(KERN_ALERT "hughnav running, nav:%d\n", hughnav_value);
 	schedule_delayed_work(&hughnav_work, hughnav_interval); // reschedule
 }
