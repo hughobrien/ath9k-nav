@@ -36,7 +36,6 @@ static void hughnav_exit(void)
 {
 	cancel_delayed_work(&nav_read_work);
 	printk(KERN_ALERT "hughnav exited, nav:%d\n", hughnav_value);
-	printk(KERN_ALERT "reg: %d\n", AR_NAV);
 }
 
 module_init(hughnav_init);
