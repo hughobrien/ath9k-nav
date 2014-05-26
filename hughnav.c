@@ -1,3 +1,5 @@
+/* Hugh O'Brien */
+
 #include <linux/module.h>
 
 static int hughnav_value = 0;
